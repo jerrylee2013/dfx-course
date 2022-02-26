@@ -37,13 +37,17 @@ func doQuicksort(arr: [var Int], left: Nat, right: Nat) {
 };
 
 func quicksort(arr: [Int]): [Int] {
+    if (arr.size() <= 1) {
+        return arr;
+    };
+
     var originalArray: [var Int] = Array.thaw<Int>(arr);
 
     doQuicksort(originalArray, 0, arr.size() - 1);
         
     let result = Array.freeze<Int>(originalArray);
 };
-
+Debug.print(debug_show(quicksort([])));
+Debug.print(debug_show(quicksort([99])));
 Debug.print(debug_show(quicksort([66,55,33,88,72])));
-
 

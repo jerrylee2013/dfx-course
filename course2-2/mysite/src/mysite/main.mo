@@ -36,6 +36,9 @@ actor {
     };
 
     func quicksort(arr: [Int]): [Int] {
+        if (arr.size() <= 1) {
+            return arr;
+        };
         var originalArray: [var Int] = Array.thaw<Int>(arr);
 
         doQuicksort(originalArray, 0, arr.size() - 1);
