@@ -18,7 +18,8 @@ actor {
     stable var postList = List.nil<Message>();
     stable var followList = List.nil<Principal>();
 
-    public func post(text:Text) {
+    public shared (mes) func post(text:Text) : async () {
+        assert(Principal.toText(mes.caller) == "2al2t-2jbuy-tn5re-ay3mw-aimky-hqdgv-3rjgx-eepq2-yjkeb-bvxrl-hae");
         let msg:Message = {postTime = Time.now(); text};
         postList := List.push<Message>(msg, postList);
         
@@ -26,7 +27,7 @@ actor {
 
     public query func posts(time: Time.Time): async [Message] {
         List.toArray<Message>(List.filter<Message>(postList, func (msg: Message) {
-            msg.postTime > time;
+            msg.postTime >= time;
         }));
         
     };
