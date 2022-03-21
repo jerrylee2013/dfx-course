@@ -20,7 +20,7 @@ actor {
         post: shared(Text) -> async ();
         posts: shared query (Time.Time) -> async [Message];
         timeline: shared (Time.Time) -> async [Message];
-        set_name: shared (?Text) -> async ();
+        set_name: shared (Text) -> async ();
         get_name: shared query () -> async ?Text;
     };
 
@@ -28,9 +28,10 @@ actor {
     stable var postList = List.nil<Message>();
     stable var followList = List.nil<Principal>();
 
-    public shared (mes) func set_name(text:?Text) : async () {
-        // assert(Principal.toText(mes.caller) == "2al2t-2jbuy-tn5re-ay3mw-aimky-hqdgv-3rjgx-eepq2-yjkeb-bvxrl-hae");
-        authorName := text;
+    public shared (mes) func set_name(text:Text) : async () {
+        
+        authorName := ?text;
+        
     };
 
     public query func get_name() : async ?Text {

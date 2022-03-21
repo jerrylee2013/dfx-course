@@ -35,7 +35,7 @@ const MyPost = (props) => {
         console.log('Success:', values);
         setNicknameUpdating(true);
         try {
-            await microblog.set_name([values.content]);
+            await microblog.set_name(values.content);
             message.info('昵称修改成功!');
         } catch (error) {
             message.error('昵称修改失败!' + error);
