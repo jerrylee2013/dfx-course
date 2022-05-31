@@ -1,0 +1,101 @@
+#V2
+call greeting.greet('liming')
+call greeting.greet("liming")
+call geeting.greet("liming")
+call dao_wallet.create_dao(principal "qhbym-qaaaa-aaaaa-aaafq-cai")
+call dao_wallet.dump_size()
+call dao_wallet.create_dao(principla "qhbym-qaaaa-aaaaa-aaafq-cai")
+call dao_wallet.create_dao(principal "qhbym-qaaaa-aaaaa-aaafq-cai")
+import dao_wallet = "rrkah-fqaaa-aaaaa-aaaaq-cai"
+call dao_wallet.dump_size()
+call dao_wallet.create_canister()
+call dao_wallet.dump_size()
+call dao_wallet.install_canister(principal "renrk-eyaaa-aaaaa-aaada-cai", file "hello.wasm")
+call dao_wallet.start_canister(principal "renrk-eyaaa-aaaaa-aaada-cai")
+import greet = "renrk-eyaaa-aaaaa-aaada-cai"
+call greet.greet("liming")
+call dao_wallet.create_dao(principal "renrk-eyaaa-aaaaa-aaada-cai")
+import dao_wallet = "rrkah-fqaaa-aaaaa-aaaaq-cai"
+call dao_wallet.dump_size()
+call dao_wallet.create_canister()
+call dao_wallet.install_canister(principal "renrk-eyaaa-aaaaa-aaada-cai", file "hello.wasm")
+call dao_wallet.start_canister(principal "renrk-eyaaa-aaaaa-aaada-cai")
+import greet = "renrk-eyaaa-aaaaa-aaada-cai"
+call greet.greet("LIming")
+call dao_wallet.create_dao(principal "renrk-eyaaa-aaaaa-aaada-cai")
+call greet.greet("LIming")
+import dao_wallet = "rrkah-fqaaa-aaaaa-aaaaq-cai"
+call dao_wallet.dump_size()
+call dao_wallet.create_canister()
+call dao_wallet.install_canister(principal "renrk-eyaaa-aaaaa-aaada-cai", file "hello.wasm")
+import greet = "renrk-eyaaa-aaaaa-aaada-cai"
+call greet.greet("HI")
+call dao_wallet.create_dao(principal "renrk-eyaaa-aaaaa-aaada-cai")
+call greet.greet("HI")
+call dao_wallet.dump_size()
+call dao_wallet.start_canister(principal "renrk-eyaaa-aaaaa-aaada-cai")
+import user1 = "ryjl3-tyaaa-aaaaa-aaaba-cai"
+import dao = "rdmx6-jaaaa-aaaaa-aaadq-cai"
+call dao.start_restrict_proposal()
+call user1.voteRestrictProposal(principla "rdmx6-jaaaa-aaaaa-aaadq-cai", true)
+call user1.voteRestrictProposal(principal "rdmx6-jaaaa-aaaaa-aaadq-cai", true)
+import user2 = "r7inp-6aaaa-aaaaa-aaabq-cai"
+import daow = "qoctq-giaaa-aaaaa-aaaea-cai"
+call daow.create_canister()
+call daow.install_canister(principal "qjdve-lqaaa-aaaaa-aaaeq-cai", file "hello.wasm")
+call daow.dump_size()
+call daow.start_canister(principal "qjdve-lqaaa-aaaaa-aaaeq-cai")
+call daow.create_dao(principal "qjdve-lqaaa-aaaaa-aaaeq-cai")
+import user1 = "ryjl3-tyaaa-aaaaa-aaaba-cai"
+import dao = "qaa6y-5yaaa-aaaaa-aaafa-cai"
+call user1.voteRestrictProposal(principal "qaa6y-5yaaa-aaaaa-aaafa-cai", true)
+call dao.start_restrict_proposal()
+call user1.voteRestrictProposal(principal "qaa6y-5yaaa-aaaaa-aaafa-cai", true)
+import user2 = "r7inp-6aaaa-aaaaa-aaabq-cai"
+call user2.voteRestrictProposal(principal "qaa6y-5yaaa-aaaaa-aaafa-cai", false)
+import user3 = "rkp4c-7iaaa-aaaaa-aaaca-cai"
+call user3.voteRestrictProposal(principal "qaa6y-5yaaa-aaaaa-aaafa-cai", true)
+exit
+import daow = "rrkah-fqaaa-aaaaa-aaaaq-cai"
+call daow.create_canister()
+call daow.install_canister(principal "renrk-eyaaa-aaaaa-aaada-cai", file "hello.wasm")
+import greet = "renrk-eyaaa-aaaaa-aaada-cai"
+call greet.greet("quant")
+call daow.add_user(principal "ryjl3-tyaaa-aaaaa-aaaba-cai")
+call daow.add_user(principal "r7inp-6aaaa-aaaaa-aaabq-cai")
+call daow.add_user(principal "rkp4c-7iaaa-aaaaa-aaaca-cai")
+call daow.set_min_vote_count(2)
+call daow.create_dao(principal "renrk-eyaaa-aaaaa-aaada-cai")
+import user1 = "ryjl3-tyaaa-aaaaa-aaaba-cai"
+import user2 = "r7inp-6aaaa-aaaaa-aaabq-cai"
+import user3 = "rkp4c-7iaaa-aaaaa-aaaca-cai"
+import dao = "rdmx6-jaaaa-aaaaa-aaadq-cai"
+call dao.start_restrict_proposal()
+call user1.voteRestrictProposal(principal "rdmx6-jaaaa-aaaaa-aaadq-cai")
+call user1.voteRestrictProposal(principal "rdmx6-jaaaa-aaaaa-aaadq-cai", false)
+call user1.voteRestrictProposal(principal "rdmx6-jaaaa-aaaaa-aaadq-cai", true)
+call user2.voteRestrictProposal(principal "rdmx6-jaaaa-aaaaa-aaadq-cai", true)
+call user3.voteRestrictProposal(principal "rdmx6-jaaaa-aaaaa-aaadq-cai", true)
+call dao.start_unrestrict_proposal()
+call user1.voteUnrestrictProposal(principal "rdmx6-jaaaa-aaaaa-aaadq-cai", false)
+call user2.voteUnrestrictProposal(principal "rdmx6-jaaaa-aaaaa-aaadq-cai", false)
+import daow = "fbiu6-6aaaa-aaaal-qa4ha-cai"
+call daow.create_canister()
+call daow.install_canister(principal "fgjsk-tyaaa-aaaal-qa4hq-cai", file "hello.wasm")
+import greet = "fgjsk-tyaaa-aaaal-qa4hq-cai"
+call greet.greet("quant")
+call daow.stop_canister(principal "fgjsk-tyaaa-aaaal-qa4hq-cai")
+call greet.greet("quant")
+call daow.uninstall_canister(principal "fgjsk-tyaaa-aaaal-qa4hq-cai")
+call daow.delete_canister(principal "fgjsk-tyaaa-aaaal-qa4hq-cai")
+import daow = "h4v2w-niaaa-aaaal-qa4iq-cai"
+call daow.create_canister()
+call daow.install_canister(principal "harah-2iaaa-aaaal-qa4kq-cai",file "hello.wasm")
+import greet="harah-2iaaa-aaaal-qa4kq-cai"
+call greet.greet("quant")
+call daow.add_user(principal "hvwrk-3aaaa-aaaal-qa4ja-cai")
+call daow.add_user(principal "hsxx6-wyaaa-aaaal-qa4jq-cai")
+call daow.add_user(principal "hhqgt-xqaaa-aaaal-qa4ka-cai")
+call daow.set_min_vote_count(2)
+call daow.dump_size()
+call daow.create_dao(principal "harah-2iaaa-aaaal-qa4kq-cai")

@@ -1,0 +1,25 @@
+#V2
+import dao_wallet = "rrkah-fqaaa-aaaaa-aaaaq-cai"
+call dao_wallet.create_canister()
+call dao_wallet.install_canister(principal "rkp4c-7iaaa-aaaaa-aaaca-cai", blob file("hello.wasm"))
+let wasm = file("hello.wasm")
+call dao_wallet.install_canister(principal "rkp4c-7iaaa-aaaaa-aaaca-cai", blob file "hello.wasm")
+call dao_wallet.install_canister(principal "rkp4c-7iaaa-aaaaa-aaaca-cai", file "hello.wasm")
+call ic.canister_status({canister_id = principal "principal "rkp4c-7iaaa-aaaaa-aaaca-cai"})
+call ic.canister_status({canister_id = principal "rkp4c-7iaaa-aaaaa-aaaca-cai"})
+call ic.canister_status(principal "rkp4c-7iaaa-aaaaa-aaaca-cai")
+call ic.canister_status({canister_id = principal "rkp4c-7iaaa-aaaaa-aaaca-cai";})
+call ic.canister_status("{canister_id = principal \\"rkp4c-7iaaa-aaaaa-aaaca-cai\\"}")
+call ic.canister_status("{canister_id = principal 'rkp4c-7iaaa-aaaaa-aaaca-cai'}")
+call ic.canister_status("{canister_id = 'rkp4c-7iaaa-aaaaa-aaaca-cai'}")
+call ic.canister_status(record {canister_id = principal 'rkp4c-7iaaa-aaaaa-aaaca-cai';})
+call ic.canister_status(record {canister_id = principal "rkp4c-7iaaa-aaaaa-aaaca-cai";})
+import dao_wallet = "rrkah-fqaaa-aaaaa-aaaaq-cai"
+call dao_wallet.start_canister(principal "rkp4c-7iaaa-aaaaa-aaaca-cai")
+import greet = "rkp4c-7iaaa-aaaaa-aaaca-cai"
+call greet.greet("jerry")
+call dao_wallet.stop_canister(principal "rkp4c-7iaaa-aaaaa-aaaca-cai")
+call greet.greet("jerry")
+call dao_wallet.uninstall_canister(principal "rkp4c-7iaaa-aaaaa-aaaca-cai")
+call greet.greet("jerry")
+call dao_wallet.delete_canister(principal "rkp4c-7iaaa-aaaaa-aaaca-cai")

@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "dfx": "0.9.3",
+  "canisters": {
+    "dao_wallet": {
+      "type": "motoko",
+      "main": "src/dao_wallet/main.mo"
+    },
+    "user1": {
+      "type": "motoko",
+      "main": "src/dao_wallet/user.mo"
+    },
+    "user2": {
+      "type": "motoko",
+      "main": "src/dao_wallet/user.mo"
+    },
+    "user3": {
+      "type": "motoko",
+      "main": "src/dao_wallet/user.mo"
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": "",
+      "args": ""
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  }
+}
